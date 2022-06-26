@@ -10,7 +10,7 @@ RUN pwd
 RUN echo "test"
 WORKDIR /app/strava_family
 RUN pwd
-RUN ls
+CMD ls
 ADD build/libs/strava_family-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8090
