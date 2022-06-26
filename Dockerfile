@@ -11,7 +11,7 @@ RUN echo "test"
 WORKDIR /app/strava_family
 RUN pwd
 ADD build/libs/strava_family-0.0.1-SNAPSHOT.jar app.jar
-
+RUN ls
 EXPOSE 8090
 
 CMD java -jar -Dspring.profiles.active=prod app.jar
