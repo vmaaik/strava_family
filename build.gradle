@@ -8,7 +8,7 @@ plugins {
 
 group = 'com.gebarowski'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '17'
 
 configurations {
     compileOnly {
@@ -47,7 +47,6 @@ dependencyManagement {
 tasks.named('test') {
     useJUnitPlatform()
 }
-
 
 war {
     enabled = true
